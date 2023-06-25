@@ -1,0 +1,53 @@
+* {
+  outline: solid red;
+}
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+}
+.sidebar {
+  width: 33%;
+  background-image: url(img/background.jpg);
+}
+.background {
+  background-color: rgba(0, 0, 0, 0.502);
+  height: fit-content;
+  width: 100%;
+  position: relative;
+  top: 12rem;;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.background > h1 {
+  color: #faebd7;
+  font-size: 72px;
+  font-weight: lighter;
+  font-family: 'Space Grotesk', sans-serif;
+}
+.logo {
+  height: 128px;
+  width: auto;
+}
+.sidebar > p {
+  font-size: smaller;
+  text-align: center;
+  position: relative;
+  top: 32rem;
+  color: #faebd7;
+}
+.sidebar-link {
+  color: #faebd7;
+}
+.content {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+}
+.content > div {
+  flex-grow: 1;
+}
+form {
+  max-width: 48rem;  
+}

@@ -7,10 +7,48 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sign-up form</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
-
+  <div class="sidebar">
+    <div class="background">
+      <img class="logo" src="img/rocket.png" alt="rocket logo">
+      <h1>MARS</h1>
+    </div>
+    <p>Photo by <a class="sidebar-link" href="https://unsplash.com/@pramodtiwari">Pramod Tiwari</a> on <a class="sidebar-link" href="https://unsplash.com/photos/EVPnMSJxY1w">Unsplash</a></p>
+  </div>
+  <div class="content">
+    <div class="text">
+      <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</p>
+      <p>Sign up <em>now</em> to get started.</p>
+      <p>You <em>know</em> you want to.</p>
+    </div>
+    <div class="form">
+      <form action="*" method="post">
+        <legend>Let's do this!</legend>
+        <label for="name">FIRST NAME</label>
+        <input type="text" name="first-name" id="name">
+        <label for="lastname">LAST NAME</label>
+        <input type="text" name="last-name" id="lastname">
+        <label for="email">EMAIL</label>
+        <input type="email" name="e-mail" id="email">
+        <label for="phonenumber">PHONE NUMBER</label>
+        <input type="tel" name="phone-number" id="phonenumber">
+        <label for="password">PASSWORD</label>
+        <input type="password" name="password" id="password">
+        <label for="confirmpassword">CONFIRM PASSWORD</label>
+        <input type="password" name="confirm-password" id="confirm-password">
+      </form>
+    </div>
+    <div class="button">
+      <button type="submit">Create Account</button>
+      <p>Already have an account? <a href="*">Log in</a></p>
+    </div>
+  </div>
 </body>
 
 </html>
