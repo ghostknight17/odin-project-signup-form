@@ -1,6 +1,6 @@
-* {
+/* * {
   outline: solid red;
-}
+} */
 body {
   margin: 0;
   height: 100vh;
@@ -11,8 +11,9 @@ body {
   background-image: url(img/background.jpg);
 }
 .background {
-  background-color: rgba(0, 0, 0, 0.502);
+  background-color: rgba(0, 0, 0, 0.400);
   height: fit-content;
+  max-height: 8rem;
   width: 100%;
   position: relative;
   top: 12rem;;
@@ -27,14 +28,14 @@ body {
   font-family: 'Space Grotesk', sans-serif;
 }
 .logo {
-  height: 128px;
+  height: 96px;
   width: auto;
 }
 .sidebar > p {
   font-size: smaller;
   text-align: center;
   position: relative;
-  top: 32rem;
+  top: 37rem;
   color: #faebd7;
 }
 .sidebar-link {
@@ -46,8 +47,35 @@ body {
   flex-direction: column;
 }
 .content > div {
+  max-height: 33%;
   flex-grow: 1;
+  padding-left: 3rem;
+}
+.text > p {
+  max-width: 36rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding-top: 5rem;
+}
+.form {
+  padding-top: 1.5rem;
+  box-shadow: 0px 2px 32px -32px;
 }
 form {
   max-width: 48rem;  
+}
+.button {
+  padding-top: 2.5rem;
+}
+.button > p > a {
+  text-decoration-line: none;
+  color: #cc6d43;
+}
+.button > button {
+  box-shadow: 0px 0px 32px -8px grey;
+  border: none;
+  border-radius: 8px;
+  color: #faebd7;
+  padding: 8px 40px; 
+  background-color: #cc6d43;
 }
