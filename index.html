@@ -31,23 +31,29 @@
     </div>
     <div class="form">
       <form action="*" method="post">
-        <legend>Let's do this!</legend>
-        <label for="name">FIRST NAME</label>
-        <input type="text" name="first-name" id="name">
-        <label for="lastname">LAST NAME</label>
-        <input type="text" name="last-name" id="lastname">
-        <label for="email">EMAIL</label>
-        <input type="email" name="e-mail" id="email">
-        <label for="phonenumber">PHONE NUMBER</label>
-        <input type="tel" name="phone-number" id="phonenumber">
-        <label for="password">PASSWORD</label>
-        <input type="password" name="password" id="password">
-        <label for="confirmpassword">CONFIRM PASSWORD</label>
-        <input type="password" name="confirm-password" id="confirm-password">
+        <fieldset>
+          <legend>Let's do this!</legend>
+          <div class="column one">
+            <label for="name">FIRST NAME</label>
+            <input type="text" name="first-name" id="name" placeholder="John" >
+            <label for="email">EMAIL</label>
+            <input type="email" name="e-mail" id="email">
+            <label for="password">PASSWORD</label>
+            <input type="password" name="password" id="password">
+          </div>
+          <div class="column two">
+            <label for="lastname">LAST NAME</label>
+            <input type="text" name="last-name" id="lastname" placeholder="Smith">
+            <label for="phonenumber">PHONE NUMBER</label>
+            <input type="tel" name="phone-number" id="phonenumber">
+            <label for="confirmpassword">CONFIRM PASSWORD</label>
+            <input type="password" name="confirm-password" id="confirm-password">
+          </div>
+        </fieldset>
       </form>
     </div>
     <div class="button">
-      <button type="submit">Create Account</button>
+      <button type="submit">Create account</button>
       <p>Already have an account? <a href="*">Log in</a></p>
     </div>
   </div>
